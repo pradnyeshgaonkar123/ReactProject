@@ -55,6 +55,15 @@ const useStyles = makeStyles((theme) => ({
             borderBottom: "1px solid white",
         },
     },
+    myP:{
+        color:'red',
+        fontSize:'20px',
+        background:'white', 
+        padding:'5px',
+    },
+    white:{
+        color:"white",
+    }
 }));
 
 export function Search() {
@@ -98,7 +107,7 @@ export function Search() {
                 {
 
                     (flag===true)?
-                    <p style={{'color':'red', 'fontSize':'20px', 'background':'white', 'padding':'5px'}}>No match found</p>
+                    <p className={classes.myP}>No match found</p>
                 
                 :
                 <TableContainer component={Paper} className={classes.myContainer}>
@@ -106,11 +115,11 @@ export function Search() {
                     <Table sx={{ minWidth: 650 }} aria-label="simple table" >
                         <TableHead style={{ background: "black", color: "white" }}>
                             <TableRow >
-                                <TableCell align="center" style={{ 'color': 'white' }}>ID</TableCell>
-                                <TableCell align="center" style={{ 'color': 'white' }}>NAME</TableCell>
-                                <TableCell align="center" style={{ 'color': 'white' }}>DEPARTMENT</TableCell>
-                                <TableCell align="center" style={{ 'color': 'white' }}>YEAR</TableCell>
-                                <TableCell align="center" colSpan='2' style={{ 'color': 'white' }}>ACTIONS</TableCell>
+                                <TableCell align="center" className={classes.white}>ID</TableCell>
+                                <TableCell align="center" className={classes.white}>NAME</TableCell>
+                                <TableCell align="center" className={classes.white}>DEPARTMENT</TableCell>
+                                <TableCell align="center" className={classes.white}>YEAR</TableCell>
+                                <TableCell align="center" colSpan='2' className={classes.white}>ACTIONS</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>

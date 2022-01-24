@@ -18,7 +18,7 @@ export default function Footer() {
           <Grid container spacing={5}>
             <Grid item xs={12} sm={12}>
               <Box borderBottom={1}></Box>
-              <ul style={{'display':'flex','justifyContent':'space-around'}}>
+              <ul className='myUl'>
               <li>
                 
                 <NavLink  color="inherit" to="/" className="footerLink">Home</NavLink>
