@@ -16,7 +16,8 @@ export const AddStudent = () => {
     const headerStyle = { margin: 2, fontSize: "25px" }
     const avatarStyle = { backgroundColor: '#1bbd7e' }
     const marginTop = { marginTop: 0 }
-    const btnStyle = {textAlign: "center", marginLeft: "40%", marginTop:"10px"}
+    const btnStyle1 = {textAlign: "center", marginTop:"10px",marginLeft:"50px", marginRight:"100px",padding:"6px 25px 6px 25px"}
+    const btnStyle2 = {textAlign: "center", marginTop:"10px"}
 
     // let [myData, setMyData] = useState([]);
 
@@ -62,7 +63,8 @@ export const AddStudent = () => {
                     <TextField fullWidth label='Department' placeholder="Enter your department" name="studDepart" value={student.studDepart} onChange={setDetails} />
                     <TextField fullWidth label='Year' placeholder="Enter your Standard" name="studYear" value={student.studYear} onChange={setDetails}  />
                     
-                    <Button type='submit' style={btnStyle} variant='contained' color='primary'>ADD</Button>
+                    <Button type='submit' style={btnStyle1} variant='contained' color='primary'>ADD</Button>
+                    <Button type='reset' style={btnStyle2} variant='contained' color='primary'>RESET</Button>
                 </form>
             </Paper>
         </Grid>
