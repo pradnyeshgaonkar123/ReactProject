@@ -13,6 +13,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "mdb-react-ui-kit": "^2.3.0",
     "mdbreact": "^5.2.0",
     "mui-table": "^4.1.0",
