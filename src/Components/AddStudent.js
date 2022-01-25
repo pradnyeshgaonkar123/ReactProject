@@ -56,12 +56,12 @@ export const AddStudent = () => {
                     <h2 style={headerStyle}>Add Student</h2>
                     <Typography variant='caption' gutterBottom>Please fill this form to add student !</Typography>
                 </Grid>
-                <form onSubmit={submitForm}>
-                    <TextField fullWidth label='ID' placeholder="Enter your ID" name="studentId" value={student.studentId} onChange={setDetails} />
-                    <TextField fullWidth label='Name' placeholder="Enter your Name" name="studeName" value={student.studeName} onChange={setDetails}/>
+                <form onSubmit={submitForm} >
+                    <TextField fullWidth label='ID' placeholder="Enter your ID" name="studentId" value={student.studentId} onChange={setDetails} required />
+                    <TextField fullWidth label='Name' placeholder="Enter your Name" name="studeName" value={student.studeName} onChange={setDetails} required />
                     
-                    <TextField fullWidth label='Department' placeholder="Enter your department" name="studDepart" value={student.studDepart} onChange={setDetails} />
-                    <TextField fullWidth label='Year' placeholder="Enter your Standard" name="studYear" value={student.studYear} onChange={setDetails}  />
+                    <TextField fullWidth label='Department' placeholder="Enter your department" name="studDepart" value={student.studDepart} onChange={setDetails} required/>
+                    <TextField fullWidth label='Year' placeholder="Enter your Standard" name="studYear" value={student.studYear} onChange={setDetails}  required/>
                     
                     <Button type='submit' style={btnStyle1} variant='contained' color='primary'>ADD</Button>
                     <Button type='reset' style={btnStyle2} variant='contained' color='primary'>RESET</Button>
